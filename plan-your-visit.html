@@ -2,20 +2,22 @@
 <html lang="en">  
 <head> 
 	<meta charset="UTF-8"> 
-	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Beer and Cheese Trail</title>
 </head> 
-	<body>
-		<nav> 
-			<a href="#main">Skip to main content</a> 
-			<ul> 
-				<li><a href="index.html">Home</a></li> 
-				<li><a href="trail-stops.html">Trail Stops</a></li> 
-				<li><a href="plan-your-visit.html">Plan Your Visit</a></li> 
-				<li><a href="gallery.html">Gallery</a></li> 
-				<li><a href="about.html">About Us</a></li> 
-			</ul> 
-		</nav> 
+	<body> 
+		<header>
+			<nav> 
+				<a href="#main">Skip to main content</a> 
+				<ul> 
+					<li><a href="index.html">Home</a></li> 
+					<li><a href="trail-stops.html">Trail Stops</a></li> 
+					<li><a href="plan-your-visit.html">Plan Your Visit</a></li> 
+					<li><a href="gallery.html">Gallery</a></li> 
+					<li><a href="about.html">About Us</a></li> 
+				</ul> 
+			</nav> 
+		</header> 
 		<main> 
 			<h1>Plan Your Visit to the Trail Stops</h1> 
 			<p>Fill out the form(s) below and plan out a visit to one of these trail stops!</p> 
@@ -27,19 +29,25 @@
 					<option>Kelley Country Creamery</option> 
 				</optgroup> 
 			</select> 
-			<fieldset> 
+			<fieldset>  
+			<form action="/action_page.php">
 				<legend>What Date is Your Visit?</legend> 
 				<input type="radio" id="week" name="day"> 
 				<label for="week">Weekday</label> 
 				<input type="radio" id="weekend" name="day"> 
 				<label for="weekend">Weekend</label> 
 				<input type="date"> 
+				<label for="date">Date</label>
 				<input type="text" placeholder="Full Name"> 
+				<label for="text">Text</label> 
 				<input type="email" placeholder="for@contact.com"> 
+				<label for="email">Email</label> 
 				<input type="tel" placeholder="555-TEXT-CONTACT"> 
+				<label for="tel">Phone Number</label> 
+				<input type="text" name="Submit"> 
+				<button type="submit">Submit</button>  
+			</form> 
 			</fieldset> 
-			<input type="text" name="Submit"> 
-			<button type="submit">Submit</button> 
 		</main> 
 	</body> 
 </html>
